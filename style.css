@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header{
+    background: url(images/background1.jpg)
+    center/cover;
+
+}
+
+nav{
+
+    /*position: fixed;
+    width: 100vw;*/
+
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    padding: 0 20px;
+}
+
+header div{
+    text-align: center;
+}
+
+header div p {
+    color: #fff;
+    
+}
+header div img {
+    width: 50%;
+    height: 50%;
+}
+
+.topic{
+    text-align: center;
+    color:#415ddb;
+    font-size:3rem
+}
