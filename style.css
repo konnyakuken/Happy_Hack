@@ -6,42 +6,264 @@
 }
 
 header{
-    background: url(images/background1.jpg)
-    center/cover;
-
+  position: relative;
+  height: 100vh;
+  background-size: cover;
 }
 
-nav{
-
-    /*position: fixed;
-    width: 100vw;*/
-
-    position: relative;
-}
-ul{
-    display: flex;
-    justify-content: flex-end;
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px;
 }
 
-li{
-    padding: 0 20px;
+nav li{
+
+    padding: 20px 20px;
 }
+
+nav li a{
+
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li a:hover{
+    color:#415ddb;
+}
+
 
 header div{
     text-align: center;
+    margin: 0 auto;
 }
 
 header div p {
     color: #fff;
-    
+    font-size: 45px;
+    margin: 20px auto;
 }
 header div img {
-    width: 50%;
-    height: 50%;
+    width: 800px;
+    margin: auto;
 }
 
 .topic{
     text-align: center;
     color:#415ddb;
-    font-size:3rem
+    font-size:3.3rem
+}
+
+
+.introduction-content{
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+}
+
+.intro_img_1{
+  background-image: url(images/introduction_001.jpg);
+}
+
+.intro_img_2{
+  background-image: url(images/introduction_002.jpg);
+}
+
+.introduction-img{
+  background-size: cover;
+  width: 500px;
+  height: 350px;
+  margin: 0 20px;
+}
+
+.introduction-text {
+  width: 420px;
+  font-size:15px ;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  margin: 30px 80px;
+}
+
+.btn{
+  text-align: center;
+  display: block;
+  margin: 16px auto;
+  width: 170px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 12px;
+  padding: 8px 0;
+  background-color: #415ddb;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.register_yellow{
+  background-color: #fec000;
+}
+
+.contents{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.courses{
+  position: relative;
+}
+
+.courses .topic{
+  margin: 50px auto;
+}
+
+.course{
+  width: 240px;
+  height: 340px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 16px;
+  margin: 10px 10px;
+}
+
+.html_img{
+  margin:15px auto 45px auto;
+  width: 71px;
+  height: 100px;
+  background-image: url(images/html.png);
+  background-size:100% 100%;
+}
+.css_img{
+  margin:15px auto 45px auto;
+  width: 71px;
+  height: 100px;
+  background-image: url(images/css.png);
+  background-size:100% 100%;
+}
+.unity_img{
+  margin:15px auto 65px auto;
+  width: 80px;
+  height: 80px;
+  background-image: url(images/unity.png);
+  background-size:100% 100%;
+}
+.ruby_img{
+  margin:15px auto 65px auto;
+  width: 80px;
+  height: 80px;
+  background-image: url(images/ruby.png);
+  background-size:100% 100%;
+}
+.js_img{
+  margin:15px auto 30px auto;
+  width: 82px;
+  height: 115px;
+  background-image: url(images/js.png);
+  background-size:100% 100%;
+}
+.swift_img{
+  margin:15px auto 49px auto;
+  width: 108px;
+  height: 96px;
+  background-image: url(images/swift.png);
+  background-size:100% 100%;
+}
+.go_img{
+  margin:10px auto 15px auto;
+  width: 130px;
+  height: 130px;
+  background-image: url(images/go.png);
+  background-size:100% 100%;
+}
+.html{
+  background-color: #f16629;
+}
+.css{
+  background-color: #2aa9df;
+}
+.unity{
+  background-color: #333333;
+}
+.ruby{
+  background-color: #ff5252;
+}
+.javascript{
+  background-color: #fed702;
+}
+.swift{
+  background-color: #fe7635;
+}
+.go{
+  background-color: #72cfdd;
+}
+
+
+.course p{
+  text-align: center;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: #fff;
+  }
+  
+  a{
+    color: #fff;
+  }
+  
+  /*========= particle js を描画するエリア設定 ===============*/
+  
+
+
+  #particles-js{ 
+    position:absolute;/*描画固定*/
+    z-index:-1;/*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color:#c9e1ff;/*背景色*/
+  }
+  
+  #wrapper{
+    position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    width:100%;
+    height: 100%;
+  }
+
+  iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+  }
+
+  footer{
+      color: #415ddb;
+      text-align: center;
+      margin: 18px;
+  }
+
+
+ 
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
 }
