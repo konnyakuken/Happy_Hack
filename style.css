@@ -6,6 +6,16 @@
 
 }
 
+@font-face {
+	font-family: 'MyFont';
+	src: url(fonts/Futura-Lig.ttf);
+}
+
+a,p{
+  font-family:'メイリオ', 'Meiryo', sans-serif;
+}
+
+
 header{
   position: relative;
   height: 100vh;
@@ -78,7 +88,9 @@ header div img {
     text-align: center;
     color:#415ddb;
     font-size:3.3rem;
+    margin: 40px auto;
 }
+
 
 @media screen and (max-width: 780px){
   .topic{
@@ -249,6 +261,66 @@ header div img {
   background-image: url(images/go.png);
   background-size:100% 100%;
 }
+
+@media screen and (max-width: 780px){
+  .contents{
+    max-width: 320px;
+  }
+  .course{
+    width: 140px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    margin: 10px 10px;
+  }
+
+  .html_img,.css_img{
+    width: 53px;
+    height: 75px;
+    margin: 10px auto;
+  }
+  .unity_img,.ruby_img{
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+  }
+  .js_img{
+    width: 60px;
+    height: 86px;
+    margin: 10px auto;
+  }
+  .swift_img{
+    width: 81px;
+    height: 72px;
+    margin: 18px auto;
+  }
+  .go_img{
+    width: 97px;
+    height: 97px;
+    margin: 10px auto;
+  }
+
+  
+  .content{
+    font-size: 12px;
+    margin: 0px auto;
+  }
+  .html,.css,.unity,.ruby,.javascript,.swift,.go{
+    margin: 14px auto;
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 8px 0;
+    background-color: #415ddb;
+  }
+}
+@media screen and (max-width: 320px){
+  .contents{
+    max-width: 300px;
+  }
+}
 .html{
   background-color: #f16629;
 }
@@ -344,6 +416,17 @@ header div img {
     margin: 100px auto;
     width: 80%;
 }
+
+@media screen and (max-width: 780px){
+  .slider{
+    margin: 40px auto;
+
+  }
+
+  .access h2{
+    margin-top: 30px;
+  }
+}
 .slider img{
     height: auto;
     width: 100%;
@@ -381,6 +464,3 @@ header div img {
 	overflow: hidden;
 }
 
-.Images .topic{
-  margin: 40px auto;
-}
