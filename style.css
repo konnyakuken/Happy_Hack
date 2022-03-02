@@ -6,13 +6,9 @@
 
 }
 
-@font-face {
-	font-family: 'MyFont';
-	src: url(fonts/Futura-Lig.ttf);
-}
 
-a,p{
-  font-family:'メイリオ', 'Meiryo', sans-serif;
+a,p,h2{
+  font-family:'futura','メイリオ', 'Meiryo', sans-serif;
 }
 
 
